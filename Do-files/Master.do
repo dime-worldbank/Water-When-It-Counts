@@ -63,6 +63,9 @@
 	if "`c(username)'" == "luiza" {
 		global github	"C:\Users\luiza\Documents\GitHub\Water-When-It-Counts"
 	}
+	if "`c(username)'" == "wb532468" {
+		global github	"C:\WBG\Repos\Water-When-It-Counts"
+	}
 	
 	
  	* Subfolder globals

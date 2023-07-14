@@ -122,6 +122,16 @@
 *						PART 4: Export balance table
 ********************************************************************************
 
+/*
+				This code requires version 6.4 of the command iebaltab to run as expected.
+				The next line of code loads that version of the command. A command loaded this way 
+				is used instead of whatever version of iebaltab the user has installed on thier computer.
+				The file used beloe was retrieved from https://github.com/worldbank/ietoolkit/releases,
+				and is commited to this repository
+				*/
+				
+	do "$github/Do-files/ado/iebaltab.ado"
+
 	iebaltab 	area share_plant pct_conflict pct_water_hh yield ///
 				ln_totwater_gs ln_rain_gs ///
 				water_gap water_gap_neg water_gap_abs, ///
